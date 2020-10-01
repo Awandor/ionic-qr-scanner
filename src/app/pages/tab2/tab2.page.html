@@ -1,0 +1,26 @@
+<ion-header no-border>
+    <ion-toolbar>
+        <ion-title>Historial</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button (click)="enviarCorreo()">
+                <ion-icon slot="icon-only" name="send"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-list>
+        <ion-item detail *ngFor="let item of localDataService.historial" (click)="abrirRegistro(item)">
+            <ion-icon slot="start" [name]="item.icon"></ion-icon>
+            <ion-label>
+                <h2>{{item.text}}</h2>
+                <p>{{item.creationDate | date:'medium'}}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
