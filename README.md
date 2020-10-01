@@ -200,7 +200,7 @@ que `initializeApp()` tiene `this.splashScreen.hide()`
 
 Ahora importamos en `app.component.ts` `timer` y lo implementamos.
 
-En `app.component.html`
+En `app.component.html` añadimos un div con nuestra animación y en `app.component.scss` controlamos la animación por css
 
 Consultar la documentación de Cordova para entender lo que hacen los diferentes parámetros del splash
 `https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/index.html`
