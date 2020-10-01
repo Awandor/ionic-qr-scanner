@@ -207,18 +207,18 @@ Consultar la documentación de Cordova para entender lo que hacen los diferentes
 
 
 ## GIT
-Añadimos los cambios a GIT> git add .
-Commit > git commit -m "Primer commit"
+Añadimos los cambios a GIT> `git add .`
+Commit > `git commit -m "Primer commit"`
 
-Si en este punto borro accidentalmente algo puedo recuperarlo con > git checkout -- .
+Si en este punto borro accidentalmente algo puedo recuperarlo con > `git checkout -- .`
 
 Que nos recontruye los archivos tal y como estaban en el último commit.
 
 Enlazamos el repositorio local con un repositorio externo en GitHub donde tenemos cuenta y hemos creado un repositorio
-git remote add origin https://github.com/Awandor/ionic-first-app.git
+`git remote add origin https://github.com/Awandor/ionic-qr-scanner.git`
 
-Situarnos en la rama master > git branch -M master
+Situarnos en la rama master > `git branch -M master`
 
-Subir todos los cambios a la rama master remota > git push -u origin master
+Subir todos los cambios a la rama master remota > `git push -u origin master`
 
 Para reconstruir en local el código de GitHub nos bajamos el código y ejecutamos `npm install` que instala todas las dependencias
